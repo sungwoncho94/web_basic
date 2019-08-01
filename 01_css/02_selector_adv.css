@@ -1,0 +1,47 @@
+/* 그룹 선택자 */
+h1, h2, h3, h4, h5, h6, .binch {
+  color:chocolate;
+
+}
+
+/* 인접 형제 선택자 */
+/* red 다음에 blue 다음에 ㅇㅇ가 있을때만 적용됨 */
+.red + .blue + div {
+  background-color: plum;
+}
+
+/* 일반 형제 선택자 */
+/* h2태그 뒤에 나오는 모든 p태그에 적용 */
+h2 ~ p {
+  color: green;
+}
+
+/* 자식 선택자 */
+/* 
+  첫번째 li는 ul의 자식임
+  ol의 자식인 li만 색깔 지정되 되었다.
+*/
+.parent > li {
+  color: blue;
+}
+
+/* 후손 선택자 */
+/* ancestor 밑에 있는 모든 li에게 적용 */
+.ancestor li {
+  color: lawngreen;
+}
+
+/* div setting */
+div {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+.blue {
+  background-color: skyblue;
+}
+
+.red {
+  background-color: pink;
+}

@@ -1,0 +1,58 @@
+div {
+  color: white;
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+}
+
+.margin {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.border {
+  border-width: 2px;
+  border-style: dotted;
+  border-color: red;
+  border-top-color: blue;
+  border-bottom-color: blueviolet;
+  border-radius: 10px;
+}
+
+.margin-shorthand-1 {
+  /* 상하좌우 모두 10px씩 준다 */
+  margin: 10px;
+}
+
+.margin-shorthand-2 {
+  /* 상하 / 좌우 */
+  margin: 10px 20px;
+}
+
+.margin-shorthand-3 {
+  /* 상 / 좌우 / 하 */
+  margin: 40px 40px 10px;
+}
+
+.margin-shorthand-4 {
+  /* 상 / 우 / 하 / 좌 */
+  margin: 10px 20px 30px 40px;
+}
+
+.align-center {
+  margin: 0 auto;
+  /* 0 - 상하 , auto - 좌우 */
+  /* 오른쪽, 왼쪽에 마진을 반반 나눠줌 = 가운데 정렬 */
+}
+
+.align-right {
+  margin-left: auto;
+  /* 왼쪽에 남은 너비를 붙인다. */
+}

@@ -1,0 +1,14 @@
+/* 
+HTML이 사람이 뼈대를 만든거라면, HTML with CSS는 사람의 외형, 모습을 나타낸다
+CSS 와 HTML은 각자 문법이 다른 별개의 언어다. 하지만, CSS는 HTML에 의존성이 있다.
+
+기본 사용법
+h1 {color:blue; font-size:15px;}
+h1 = selector : 어떤 element에 어떤 스타일을 적용시킬지?
+color = property
+blue = value
+
+활용
+1. 인라인
+2. 내부참조 (Embedding)
+*/

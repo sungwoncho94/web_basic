@@ -1,0 +1,37 @@
+/* 전체 선택자 */
+* {
+  color: red;
+}
+
+/* 태그 선택자 */
+h1 {
+  color: blue;
+}
+
+/* 클래스 선택자 : 클래스는 .으로 접근 -> pink라는 이름의 class에 모두 적용 */
+.yellow {
+  color: yellow;
+}
+
+.pink {
+  color: rgb(241, 149, 188);
+}
+
+.bold {
+  font-weight: bold; 
+}
+
+/* 아이디 선택자 : 아이디는 #으로 접근 */
+#green {
+  color: green;
+}
+
+#purple {
+  color: purple;
+}
+
+#orange {
+  color: rgb(128, 58, 33) !important;
+  /* important : 가장 우선순위에 둔다. 하지만 important를 많이 쓰면 안좋은 코드임 */
+  color: orange;
+}

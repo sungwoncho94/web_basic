@@ -1,0 +1,31 @@
+h1 {
+  color: chocolate;
+  /* font-size: 2em;  <- h1 기본 폰트사이즈 */
+  /* 디폴트 (16px)의 50% -> 8px 적용 */
+  /* font-size: 50% */
+}
+
+section {
+  /* 디폴트 (16px)의 50% -> 8px 적용 */
+  font-size: 50%;
+}
+
+section > h2 {
+  color: grey;
+  /* section의 폰트사이즈를 적용해주고, 상속 이용 */
+  /* 상속의 영향(section = 8px) */
+  /* 부모가 가지는 폰트사이즈의 5배 = 40px */
+  font-size: 5em; 
+}
+
+ul {
+  /* 최상단의 default size에 영향을 받음 */
+  /* 16px * 2 = 32px */
+  font-size: 2rem;
+}
+
+#box {
+  width: 50vw;
+  height: 100px;
+  background-color: hotpink
+}
