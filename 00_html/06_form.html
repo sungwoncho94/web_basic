@@ -1,0 +1,61 @@
+<!-- 제출이라는 행위(제출하는 방법) & 어디로 제출할건지가 중요 -->
+<!DOCTYPE html>
+<!-- 세살버릇 여든간다 -->
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>주문 Form</title>
+</head>
+<body>
+  <!-- action : form을 어디로 제출할지 적어주는 곳 -->
+  <!-- action="#" : 아무데도 보내지 않은 것. -> 결국 자기자신에게 보냄 -->
+  <form action="#">
+    TEXT: <input type="text" value="100" name="조뮁" placeholder="내용을 입력해주세요"/><br/>  
+    Number: <input type="number" disabled placeholder="숫자를 입력해주세요"/><br/>
+    Password: <input type="password"/><br/>
+    Email: <input type="email"/><br/>
+    DATE: <input type="date" value="2019-08-01" name="birthday"/><br/>
+
+    <hr/>
+
+    <input type="radio" name="language" value="1" checked/>HTML<br/>
+    <input type="radio" name="language" value="2"/>CSS<br/>
+    <input type="radio" name="language" value="3"/>JS<br/>
+    <!-- name = language 중 하나만 선택할 수 있다. -->
+    <!-- language라는 값으로 셋 중 체크된 하나가 넘어옴 -->
+    <!-- checked="true" 에서 ="true"생략. checked가 없을 때 default값 = False -->
+    <hr/>
+
+    <select name="country">
+      <option value="1">한국</option>
+      <option value="2">미국</option>
+      <option value="3" selected>중국</option>
+      <option value="4" disabled>일본</option>
+    </select><br/>
+
+    <hr/>
+
+    <input type="checkbox" name="option" value="1"/>여러개<br/>
+    <input type="checkbox" name="option" value="2"/>선택이<br/>
+    <input type="checkbox" name="option" value="3"/>가능하다<br/>
+
+    <input type="color"/><br/><br/>
+
+    <!-- 사용자가 보낼 수 있는 수단 작성 -->
+    <input type="submit" value="제출하기"/>
+
+  </form>
+</body>
+</html>
+
+
+<!-- 제출하기를 눌렀을 때 url (내가 선택한 기본값name이 나타남)
+http://127.0.0.1:5500/00_html/06_form.html
+?조뮁=100
+&birthday=2019-08-01
+&language=1
+&country=3 
+name을 적어줘야 data를 받을 때, name과 정보를 함께 받을 수 있다.
+ -->

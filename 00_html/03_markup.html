@@ -16,16 +16,19 @@
   <h1>프로그래밍 교육</h1>
   <!-- 내부링크로 이동하기 -->
   <!-- id지정해서 이동, id는 #으로 부른다 -->
-  <a href="#python">
-    <img src="images/python.png" alt="python">
-  </a>
-  <a href="#web">
-    <img src="images/html.jpg" alt="html"/>
-  </a>
-  <!-- 같은 폴더 내에 있는 index.html로 이동 : 상대경로로 이동 -->
-  <a href="02_index.html">참고사이트</a>
-  <!-- 자동으로 메일 보내기로 연결 -->
-  <a href="mailto:sungwoncho94@naver.com">메일 보내기</a>
+  <!-- <nav> </nav> 안에 이미지 링크가 있어야 사이즈가 지정됨. -->
+  <nav>
+    <a href="#python">
+      <img src="../images/python22.png" alt="python"/>
+    </a>
+    <a href="#web">
+      <img src="images/html.jpg" alt="html"/>
+    </a>
+    <!-- 같은 폴더 내에 있는 index.html로 이동 : 상대경로로 이동 -->
+    <a href="02_index.html">참고사이트</a>
+    <!-- 자동으로 메일 보내기로 연결 -->
+    <a href="mailto:sungwoncho94@naver.com">메일 보내기</a>
+  </nav>
   <hr/>
 
   <header id="python">
@@ -71,6 +74,7 @@
       <li style="list-style-type: square">CSS</li>
     </ul>
     <!-- youtube동영상 추가 -->
+    <!-- iframe : html안에 html을 가져와서 그 페이지를 나타내주는 것. -->
     <iframe width="893" height="502" src="https://www.youtube.com/embed/C06xRvXIAUk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </article>
 </body>
