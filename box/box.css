@@ -1,0 +1,54 @@
+.big-box {
+  position: relative;
+  margin: 100px auto 500px;
+  /* # 상에 마진100px  */
+  border: 5px solid black;
+  width: 500px;
+  height: 500px;
+}
+
+.small-box {
+  width: 100px;
+  height: 100px;
+}
+
+#red {
+  background-color: red;
+  /* 큰 사각형 내부의 우측 하단 모서리에 빨간 사각형 위치시키기 */
+  position: absolute;
+  /* big box를 기준으로 움직이려면 absolute를 줘야한다. */
+  right: 0;
+  bottom: 0;
+}
+
+#gold {
+  background-color: gold;
+  /* 브라우저의 하단에서 50px, 우측에서 50px 위치에 고정하기 */
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  /* gold가 옮겨지는 순간 모든 상자의 위치들이 바뀐다 */
+}
+
+#green {
+  background-color: green;
+  /* absolute 이용해서 큰 사각형의 가운데 위치시키기 */
+  position: absolute;
+  /* bigbox를 기준으로 움직이려면 absolute 포지션 */
+  top: 200px;
+  left: 200px;
+}
+
+#blue {
+  background-color: blue;
+  /* relative를 사용해서 큰 사각형 좌측 상단 모서리에서 100px, 100px 띄우기 */
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+
+#pink {
+  background-color: pink;
+  /* 큰 사각형 내부의 좌측 상단 모서리로 옮기기*/
+  /* 골드, 빨강, 초록, 파랑을 움직이면 핑크는 저절로 가장 처음 위치로 온다. */
+}
