@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="07_position.css">
+</head>
+<body>
+
+  <h1>1. Static </h1>
+  <div class="box">static</div>
+  <div class="box">static</div>
+  <div class="box">static</div>
+  <div class="box">static</div>
+
+  <h2>2. Relative</h2>
+  <div class="parent">
+    <!-- parent = static요소임. 그 밑에 있는 absolute도 static이 된다.  -->
+      <div class="absolute box">
+        absolute
+          <!-- absolute : 절대적 기준으로 움직임 -->
+          <!-- relative box의 static position을 인식하고, 그 밑에 만들어짐 -->
+
+          <!-- parent밑으로 옮겼는데, parent를 static으로 인식 안하고 body의 끝부분을 기준으로 삼는다 -->
+          <!-- relative는 자신이 기준이지만
+               absolute는 body가 기준이다. -->
+
+          <!-- parent가 fixed로 움직이니까 parent를 기준으로 움직임 -->
+      </div>
+  </div>
+
+  
+  <div class="fixed box">
+    fixed
+  </div>
+
+  <div class="ground box">
+      ground
+  
+    </div>
+    <div class="relative box">
+        <!-- 여러가지 클래스를 먹일 수 있음. 띄어쓰기로 구분 -->
+        relative
+  </div>
+
+  <h3>3. Float</h3>
+  <div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/600px-Cat03.jpg" alt="">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+  </div>
+
+</body>
+</html>
+
+<!-- 
+  static의 배치요소
+  (1) 상대적 배치요소 : relative
+  
+  
+  absolute, fixed, sticky
+
+ -->
+
+ <!-- 
+
+  자주쓰는 폰트/사이즈 - 시험나옴
+  family  size  weight 
+  boarder필수요소 : style
+  font shorthand 필수요소 : font-family, font-size
+
+  static-기본값, 
+  relative-자기를 중심으로 움직임, 
+  absolute-최상단의 static까지 찾아올라가서 움직임
+  (조건 : parent가 static이 아닌 경우(움직였을 경우) parent를 기준으로 삼음)
+  fixed-
+  -->

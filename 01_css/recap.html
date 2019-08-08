@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    h1 {
+      width: 150px;
+      margin-left : auto;  
+      /* 오른쪽에 있던 마진을 모두 왼쪾으로 옮김 = 오른쪽 정렬 */
+      margin-right: auto;
+      /* 둘 다 하면 중앙정렬됨 */
+    }
+    /* header는 자신의 크기만 줄인다. 여전히 가로폭 전체를 차지함 */
+  </style>
+</head>
+<body>
+  <h1> 나는 h1 </h1>
+  <p> 나는 p </p>
+  <a href="#"> 이건 인라인 태그야!</a> 바로 뒤에 다른 요소가 올 수 있어
+  <br />
+  <hr />
+  <!-- ex. 관련사항으로 가고싶을 때, <이곳>을 눌러주세요 
+       입력할 때, <이곳>에만 링크를 걸 수 잇도록!! -->
+  <span>관련사항으로 가고싶을 때, <a href="#">이곳</a>을 눌러주세요</span> 
+</body>
+</html>
+
+<!-- 
+  마진 : 특정 컨텐츠를 기반으로 다른 element와의 여백 설정
+  상 우 하 좌 순서로 개별 & 한꺼번에 설정 가능
+  .보더 : 테두리영역, 기본값 없음 / 스타일 = 필수요소(dotted, solid...)
+  디스플레이 속성
+  (1) block
+  h1, p태그 : block요소 / 전체 가로폭을 차지함 / 자신의 크기가 작아지더라도
+  마진을 통해서 전체 가로폭을 차지.
+  p태그 중앙정렬하고싶다 -> p태그의 컨텐츠 크기를 줄인 후, 마진 컨트롤 하자.
+  (2) inline태그
+  a 태그 : 자신의 문자 크기만큼만 차지함.
+  span태그 : 
+  블락을 인라인으로 만들고 싶을 때 = inline-block
+  inlie 요소 : a태그, span
+ -->

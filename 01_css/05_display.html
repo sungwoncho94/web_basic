@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="05_display.css">
+</head>
+<body>
+  <h1>1. Block Level element</h1>
+  <h2>h계열의 태그</h2>
+  <p>p태그</p>
+  <div>영역구분하는 태그 = division</div>
+  <form action="">form 태그</form>
+  <p>ul>li*3이라고 써보자! >표시 : 자식표시</p>
+  <ul>
+    <li>항상 새로운 라인에서 시작함.</li>
+    <li>화면 크기 전체의 가로폭을 차지한다</li>
+    <li>block레벨 요소 내에 inline레벨 요소를 포함할 수 있다.</li>
+  </ul>
+  <!-- 
+    ul, li는 모두 block요소라서 한 줄을 차지해야한다. 하지만 보통 메뉴바는 가로형태로 되어있음
+    -> li를 inline요소로 바꾼 것.
+    05.css에서 확인하기
+   -->
+
+  <h1>2. Inline Level element</h1>
+  <h2>inline요소는 한줄에 표시되며, width, height, margin-top/bottom을 쓸 수 없다.</h2>
+  <a href="">a 태그를 가장 자주 쓰지</a>
+  <span>span안에 넣어주면 inline화 된다</span>
+  <input type="text"/>
+  <input type="date">
+  <input type="submit">
+  <img src="#" alt="이미지">
+  모두 inline level element라서 한줄에 표시된다
+
+  <h1>3. inline-block</h1>
+  <ol>
+    <li>inline이지만 block에서 사용되는 속성을 활용할 수 있다</li>
+    <li>width, height, margin-top, margin-bottom값을 지정할 수 있다</li>
+    <li>margin-left, margin-right는 inline도 가능하다</li>
+  </ol>
+
+  <h1>4. None</h1>
+  <p>요소를 사라지게 만든다. (없앤다 = 공간도 사라짐)</p>
+
+  <p id="bye">이건 곧 사라질 태그</p>
+  
+  <p id="hollow">없애는 두번째 방법 = 투명인간</p>
+  <p>viisbility: hidden -> 공간은 남아있다.</p>
+
+  <!-- 마진은 큰 ㄱ밧을 기준으로 서로 겹쳐서 표현된다. -->
+
+  <!-- 
+    마진 : 특정 컨텐츠를 기반으로 다른 element와의 여백 설정
+    상 우 하 좌 순서로 개별 & 한꺼번에 설정 가능
+    .보더 : 테두리영역, 기본값 없음 / 스타일 = 필수요소(dotted, solid...)
+    디스플레이 속성
+    (1) block
+    h1, p태그 : block요소 / 전체 가로폭을 차지함 / 자신의 크기가 작아지더라도
+    마진을 통해서 전체 가로폭을 차지.
+    p태그 중앙정렬하고싶다 -> p태그의 컨텐츠 크기를 줄인 후, 마진 컨트롤 하자.
+    block요소 : div, h1 ~ h6, p, ol, ul, li, hr, table, form
+    
+    (2) inline태그
+    a 태그 : 자신의 문자 크기만큼만 차지함.
+    span태그 : 
+
+    inlie 요소 : a태그, span
+    inline은 margin-좌우 가능 / margin상하 불가능
+    padding은 다 적용 가능
+    but, padding요소 값을 잘못주면 다른 element와 겹친다. -> padding으로 조정X
+    
+    (3) inline-block 요소 : 우리가 css에서 display설정을 해주는 것.
+    블락을 인라인으로 만들고 싶을 때 = inline-block
+    inline요소는 width, height, margin을 설정할 수 없다.
+    -> inline-block을 사용해서 inline처럼 움직이지만, block의 요소를 설정할 수 있다.
+    
+    (4) display None
+   -->
+
+</body>
+</html>

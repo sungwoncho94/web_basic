@@ -1,0 +1,39 @@
+body {
+  /* background-image: url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile26.uf.tistory.com%2Fimage%2F990E023359F043D10DB333');
+  background-size: cover; */
+  /* 가로를 기준으로 맞춰진다 */
+  /* background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; */
+  /* background-size: contain; */
+} 
+/* 
+p {
+  font-family: 'Ma Shan Zheng', cursive;
+}
+*/
+
+* {
+  font-family: 'Coming Soon', cursive;
+  font-size: 30px;
+}
+
+h1 {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 40px;
+  font-weight: bold;
+} 
+
+body {
+  font-family: 'Coming Soon', cursive;
+}
+/* 만약 * 을 적용하지 않으면, h1의 상위 부모개념인 body의 설정이 적용됨 */
+
+span {
+  /* font-size: 150%;
+  font-family: 'Nanum Pen Script', cursive;
+  sans-serif = 글자 끝에가 꺾이도록 */
+  /* font shorthand 필수요소 : font-family, font-size */
+  font: 'Courier New', 2rem, bold
+  border: ;
+}
