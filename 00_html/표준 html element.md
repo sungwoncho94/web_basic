@@ -113,38 +113,38 @@
 
 ### 사용할 수 있지만, 권장하지 않는 html element
 
-| <tag>         | 설명           |
-| ------------- | -------------- |
-| `<acronym>`   | <abbr> 사용    |
-| `<applet>`    |                |
-| `<blink>`     |                |
-| `<big>`       | Font-size 사용 |
-| `<center>`    |                |
-| `<frame>`     |                |
-| `<frameset>`  | <iframe> 사용  |
-| `<isindex>`   |                |
-| `<keygen>`    |                |
-| `<marquee>`   |                |
-| `<plaintext>` |                |
-| `<shadow>`    |                |
-| `<tt>`        | <span> 사용    |
+| <tag>         | 설명             |
+| ------------- | ---------------- |
+| `<acronym>`   | `<abbr> `사용    |
+| `<applet>`    |                  |
+| `<blink>`     |                  |
+| `<big>`       | `Font-size` 사용 |
+| `<center>`    |                  |
+| `<frame>`     |                  |
+| `<frameset>`  | `<iframe> `사용  |
+| `<isindex>`   |                  |
+| `<keygen>`    |                  |
+| `<marquee>`   |                  |
+| `<plaintext>` |                  |
+| `<shadow>`    |                  |
+| `<tt>`        | `<span>` 사용    |
 
  
 
 ### 사용할 수 없는 html element  (삭제된 element)
 
-| <tag>        | 설명              |
-| ------------ | ----------------- |
-| `<bgsound>`  | <audio> 사용      |
-| `<big>`      | Font-size 사용    |
-| `<font>`     |                   |
-| `<dir>`      |                   |
-| `<hgroup>`   |                   |
-| `<listing>`  |                   |
-| `<nobr>`     |                   |
-| `<noframes>` | <iframe> 사용     |
-| `<spacer>`   |                   |
-| `<strike>`   | <del> <s> 사용    |
-| `<xmp>`      | <pre> <code> 사용 |
+| <tag>        | 설명                    |
+| ------------ | ----------------------- |
+| `<bgsound>`  | `<audio> `사용          |
+| `<big>`      | `Font-size `사용        |
+| `<font>`     |                         |
+| `<dir>`      |                         |
+| `<hgroup>`   |                         |
+| `<listing>`  |                         |
+| `<nobr>`     |                         |
+| `<noframes>` | `<iframe> `사용         |
+| `<spacer>`   |                         |
+| `<strike>`   | `<del>` ` <s> `사용     |
+| `<xmp>`      | `<pre> ` ` <code>` 사용 |
 
  
